@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Site Simples</title>
+    <script src="..\js\script.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin: 20px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contato</h1>
+    </header>
+
+    <section>
+      <h2>Envie sua mensagem</h2>
+      <form
+        action="mailto:exemplo@dominio.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea
+        ><br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 IDEP - Instituto Estadual de Desenvolvimento da Educação
+        Profissional de Rondônia
+      </p>
+    </footer>
+  </body>
+</html>
